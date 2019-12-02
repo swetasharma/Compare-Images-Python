@@ -33,21 +33,19 @@ git config --global user.email "email"
 
 2. We have to install Python to use it!
 
-Make sure to download to install python3 version
 How to install Python on Linux?
-On terminal type the following:
+To manage software packages for Python, let’s install pip:
 
+On terminal type the following:
 sudo apt-get update
 sudo apt-get install python-pip
 pip3 install python
 python will get installed
-
+execute below command to check python version
 python --version 
 
 You will need to install the pillow for the code to work.
 pip install Pillow
-
-Congratulations! Setup completed!
 
 cd to the directory and run imagedf.py, after the script finish its execution it will generate result.csv file which you can use 
 
@@ -72,3 +70,5 @@ python --version
 
 You will need to install the pillow for the code to work.
 pip install Pillow
+
+Congratulations! Setup completed!

@@ -4,12 +4,12 @@ from pathlib import Path
 # importing csv module
 import csv
 
-# user_input = raw_input("Enter the path of your file: ")
-# csv file name 
-inputfilename = Path("U:/Loblaw/records.csv")# inputfilename = Path(user_input)
+user_input = raw_input("Enter the path of your file: ")
+# csv file name
+inputfilename = Path(user_input)
 
 # name of csv file 
-outputfilename = Path("U:/Loblaw/theresult.csv")
+outputfilename = Path("theresult.csv")
 
 def compare(image1, image2):
 	h1 = Image.open("image1").histogram()

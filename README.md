@@ -16,23 +16,33 @@ The script can be executed on both Linux(Ubuntu) and Windows platforms.
 sudo apt install git-all
 ```
 ### 1. Clone this repo
+```
 git clone https://github.com/swetasharma/Compare-Images-Python.git
 cd Compare-Images-Python
+```
 
 ### 2. We have to install Python to use it!
 How to install Python on Linux?
 To manage software packages for Python, let’s install pip:
 
 On terminal type the following:
+
+```
 sudo apt-get update
 sudo apt-get install python-pip
 pip3 install python
+```
 python will get installed
 execute below command to check python version
+```
 python --version 
+```
 
 ### You will need to install the pillow for the code to work.
+
+```
 pip install Pillow
+```
 
 cd to the directory and run compareimage.py, after the script finish its execution it will generate result.csv file which you can use 
 

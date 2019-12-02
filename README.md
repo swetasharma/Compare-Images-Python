@@ -48,7 +48,7 @@ python --version
 You will need to install the pillow for the code to work.
 pip install Pillow
 
-cd to the directory and run imagedf.py, after the script finish its execution it will generate result.csv file which you can use 
+cd to the directory and run compareimage.py, after the script finish its execution it will generate result.csv file which you can use 
 
 
 For Windows Users:

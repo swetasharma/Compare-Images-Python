@@ -16,7 +16,7 @@ def compare(image1, image2):
 	h2 = Image.open("image2").histogram()
 
 	rms = math.sqrt(reduce(operator.add,
-						   map(lambda a,b: (a-b)**2, h1, h2))/len(h1))
+			map(lambda a,b: (a-b)**2, h1, h2))/len(h1))
 	return rms
 	
 # Creating an empty Dictionary 

@@ -11,6 +11,7 @@ Assumptions:
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2"
 
 
+The script can be executed on both Linux(Ubuntu) and Windows platforms.
 For Ubuntu Users:
 
 Basic setup:

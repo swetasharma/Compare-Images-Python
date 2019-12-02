@@ -6,7 +6,7 @@ Assumptions:
 1. Please make sure Input CSV file and all the images to be compared are in same folder
 2. Make sure the name you provide for image 1 and image 2 are only image name with format imagename.png or imagename.png
 3. You will see the csv output file in the same folder
-4. Make sure you clone the file imagedf.py in the same folder
+4. Make sure you clone the file compareimage.py in the same folder
 5. Make sure you clone the repo only from Master branch
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2"
 
@@ -51,12 +51,6 @@ cd to the directory and run imagedf.py, after the script finish its execution it
 
 
 For Windows Users:
-Install the python in windows.
-
-1. Firstly open internet browser like chrome or firefox etc
-2. In the search tab type this link “python”
-3. Look for the downloads link in that website ,click on it to download the latest version of the python
-4. After it gets downloaded we can install by clicking the executable file
 
 How to install Python on Windows?
 Python is available from its website, Python.org. Once there, hover your mouse over the Downloads menu, then over the Windows option, and then click the button to download the latest release.

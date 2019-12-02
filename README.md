@@ -1,7 +1,7 @@
 # Compare-Images-Python
 Automate to figure out if N pairs of images are different
 
-Assumptions:
+## Assumptions:
 1. Please make sure Input CSV file and all the images to be compared are in same folder
 2. Make sure the name you provide for image 1 and image 2 are only image name with format imagename.png or imagename.png
 3. You will see the csv output file in the same folder
@@ -10,15 +10,15 @@ Assumptions:
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2"
 
 The script can be executed on both Linux(Ubuntu) and Windows platforms.
-Basic setupFirst thing’s first,
+## Basic setupFirst thing’s first,
 1. we have to install git to use it! We can do it quick and easy using apt:
 sudo apt install git-all
 
-1. Clone this repo
+### 1. Clone this repo
 git clone https://github.com/swetasharma/Compare-Images-Python.git
 cd Compare-Images-Python
 
-2. We have to install Python to use it!
+### 2. We have to install Python to use it!
 How to install Python on Linux?
 To manage software packages for Python, let’s install pip:
 
@@ -30,15 +30,15 @@ python will get installed
 execute below command to check python version
 python --version 
 
-You will need to install the pillow for the code to work.
+### You will need to install the pillow for the code to work.
 pip install Pillow
 
 cd to the directory and run compareimage.py, after the script finish its execution it will generate result.csv file which you can use 
 
 
-For Windows Users:
+## For Windows Users:
 
-How to install Python on Windows?
+### How to install Python on Windows?
 Python is available from its website, Python.org. Once there, hover your mouse over the Downloads menu, then over the Windows option, and then click the button to download the latest release.
 
 Once the package is downloaded, open it to start the installer.

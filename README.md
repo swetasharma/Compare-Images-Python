@@ -1,7 +1,6 @@
 # Compare-Images-Python
 Automate to figure out if N pairs of images are different
 
-
 Assumptions:
 1. Please make sure Input CSV file and all the images to be compared are in same folder
 2. Make sure the name you provide for image 1 and image 2 are only image name with format imagename.png or imagename.png
@@ -10,9 +9,7 @@ Assumptions:
 5. Make sure you clone the repo only from Master branch
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2"
 
-
-The script can be executecd yourreponame
-d on both Linux(Ubuntu) and Windows platforms.
+The script can be executed on both Linux(Ubuntu) and Windows platforms.
 Basic setupFirst thing’s first,
 1. we have to install git to use it! We can do it quick and easy using apt:
 sudo apt install git-all
@@ -21,13 +18,7 @@ sudo apt install git-all
 git clone https://github.com/swetasharma/Compare-Images-Python.git
 cd Compare-Images-Python
 
-
-If you’d like, you can go ahead and save your git username and email so that you won’t have to enter them in again for future git commands.
-git config --global user.name "User Name"
-git config --global user.email "email"
-
 2. We have to install Python to use it!
-
 How to install Python on Linux?
 To manage software packages for Python, let’s install pip:
 

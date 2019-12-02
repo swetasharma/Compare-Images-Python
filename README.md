@@ -11,21 +11,15 @@ Assumptions:
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2"
 
 
-The script can be executed on both Linux(Ubuntu) and Windows platforms.
-For Ubuntu Users:
-
-Basic setup:
-First thing’s first,
+The script can be executecd yourreponame
+d on both Linux(Ubuntu) and Windows platforms.
+Basic setupFirst thing’s first,
 1. we have to install git to use it! We can do it quick and easy using apt:
 sudo apt install git-all
 
-Go ahead and navigate to the directory you want to setup version control for in the terminal using the standard “cd” command.
-
-you can specify the path of the directory where git needs to make a clone. So, to clone in a target directory use the following command
-git clone -b <name_of_the_branch> --single-branch <url_of_the_repo> <path_of_the_empty_directory>
-
-Cloning a specific branch(Master) only:
-git pull origin master
+1. Clone this repo
+git clone https://github.com/swetasharma/Compare-Images-Python.git
+cd Compare-Images-Python
 
 
 If you’d like, you can go ahead and save your git username and email so that you won’t have to enter them in again for future git commands.

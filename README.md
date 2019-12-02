@@ -12,8 +12,9 @@ Automate to figure out if N pairs of images are different
 The script can be executed on both Linux(Ubuntu) and Windows platforms.
 ## Basic setupFirst thing’s first,
 1. we have to install git to use it! We can do it quick and easy using apt:
-> sudo apt install git-all
-
+```
+sudo apt install git-all
+```
 ### 1. Clone this repo
 git clone https://github.com/swetasharma/Compare-Images-Python.git
 cd Compare-Images-Python

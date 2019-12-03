@@ -1,3 +1,5 @@
+import  PIL
+from PIL import Image
 import math, operator
 from pathlib import Path
 # importing csv module

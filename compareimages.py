@@ -16,31 +16,22 @@ def compare(image1, image2):
 	return math.sqrt(reduce(operator.add, map(lambda a, b: (a - b) ** 2, h1, h2)) / len(h1))
 
 # Creating an empty Dictionary
-dictObj = {}
+dict_list = []
 
 try:
 	with open(inputfilename, 'r') as csvfile: 
 		# creating a csv reader object
 		reader = csv.DictReader(csvfile)
 		for row in reader:
-			print(row)
 			# get total number of columns
 			columns = len(row)
-			print(columns)
+			#print(columns)
 			if columns != 2:
 				print("There must be exactly 2 number of columns with column name as image1 and image2")
+			dict_list.append(row)
+			
+			print(dict_list)	
 				
-	
-				# Create a new dictionary - data rows as dictionary objects
-				dictObj = {
-					'image1': rows[0],
-					'image2': rows[1],
-					'similar': compare(rows[0], rows[1]),
-					'elapsed': '0'
-					for rows in reader
-				}
-				
-
 except IOError:
   print("File not found or path is incorrect")
 
@@ -49,4 +40,4 @@ with open(outputfilename, "w") as csv_file:
 	writer = csv.DictWriter(csv_file, fieldnames = ["image1", "image2", "similar", "elapsed"])# writing headers(field names)
 	writer.writeheader()
 	# writing data rows
-	writer.writerows(dictObj)
+	writer.writerows(dict_list)

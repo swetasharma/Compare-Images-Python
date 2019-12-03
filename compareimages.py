@@ -4,9 +4,9 @@ from pathlib import Path
 # importing csv module
 import csv
 
-user_input = raw_input("Enter the path of your file: ")
+
 # csv file name
-inputfilename = Path(user_input)
+inputfilename = Path("input.csv")
 
 # name of csv file 
 outputfilename = Path("theresult.csv")

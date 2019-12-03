@@ -28,9 +28,12 @@ try:
 			#print(columns)
 			if columns != 2:
 				print("There must be exactly 2 number of columns with column name as image1 and image2")
+			row['similar'] = compare(row['image1'], row['image2'])
+			row['elapsed'] = 0
 			dict_list.append(row)
+			print(row)
 			
-			print(dict_list)	
+			#print(dict_list)
 				
 except IOError:
   print("File not found or path is incorrect")

@@ -6,10 +6,10 @@ import csv
 
 
 # csv file name
-inputfilename = Path("input.csv")
+inputfilename = Path("Images_To_Be_Compared.csv")
 
 # name of csv file 
-outputfilename = Path("theresult.csv")
+outputfilename = Path("Compared_Images.csv")
 
 def compare(image1, image2):
 	h1 = Image.open("image1").histogram()

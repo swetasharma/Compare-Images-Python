@@ -1,5 +1,3 @@
-import  PIL
-from PIL import Image
 import math, operator
 from pathlib import Path
 # importing csv module
@@ -9,7 +7,7 @@ import csv
 inputfilename = Path("Images_To_Be_Compared.csv")
 
 # Compared images name of csv file
-outputfilename = Path("Compared_Images.csv")
+outputfilename = Path("Compared_Images_Result.csv")
 
 def compare(image1, image2):
 	h1 = Image.open("image1").histogram()
@@ -24,21 +22,24 @@ try:
 	with open(inputfilename, 'r') as csvfile: 
 		# creating a csv reader object
 		reader = csv.DictReader(csvfile)
-		# get total number of columns
-		columns = len(row)
-		print(columns)
-		if columns != 2:
-			print("There must be exactly 2 number of columns with column name as image1 and image2")
-			for row in reader:
-				print(row)
-			# Create a new dictionary - data rows as dictionary objects
-			dictObj = {
-			  'image1': rows[0],
-			  'image2': rows[1],
-			  'similar': compare(rows[0], rows[1]),
-			  'elapsed': '0'
-			  for rows in reader
-			}
+		for row in reader:
+			print(row)
+			# get total number of columns
+			columns = len(row)
+			print(columns)
+			if columns != 2:
+				print("There must be exactly 2 number of columns with column name as image1 and image2")
+				
+	
+				# Create a new dictionary - data rows as dictionary objects
+				dictObj = {
+					'image1': rows[0],
+					'image2': rows[1],
+					'similar': compare(rows[0], rows[1]),
+					'elapsed': '0'
+					for rows in reader
+				}
+				
 
 except IOError:
   print("File not found or path is incorrect")

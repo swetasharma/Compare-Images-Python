@@ -1,5 +1,6 @@
 import math, operator
 from pathlib import Path
+from PIL import Image
 # importing csv module
 import csv
 
@@ -15,7 +16,7 @@ def compare(image1, image2):
 
 	return math.sqrt(reduce(operator.add, map(lambda a, b: (a - b) ** 2, h1, h2)) / len(h1))
 
-# Creating an empty Dictionary
+# Creating an empty list of Dictionary
 dict_list = []
 
 try:

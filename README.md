@@ -8,6 +8,7 @@ Automate to figure out if N pairs of images are different.
 4. Make sure you clone the file compareimages.py in the same folder.
 5. Make sure you clone the repo only from ```master``` branch.
 6. Make sure the column name of input csv file of first column has to be "image1" and second column name has to be "image2".
+7. The user takes the backup of the generated output csv file in some other folder before running the script again. The user will lose the output data if the back up is not taken of different input image file to be compared.
 
 The script can be executed on both Linux(Ubuntu) and Windows platform.
 ## Basic setup:
@@ -71,3 +72,5 @@ python --version
 Repeat step 3 given above for windows as well.
 
 Congratulations! Setup completed!
+
+

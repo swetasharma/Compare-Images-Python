@@ -40,7 +40,7 @@ execute below command to check python version
 python --version 
 ```
 
-### You will need to install the pillow for the code to work.
+### 3. You will need to install the pillow for the code to work.
 
 ```
 pip install Pillow
@@ -68,7 +68,6 @@ It is safe to accept the default install location, and it's vital to add Python 
 open terminal and execute below command
 python --version
 
-You will need to install the pillow for the code to work.
-pip install Pillow
+Repeat step 3 given above for windows as well.
 
 Congratulations! Setup completed!

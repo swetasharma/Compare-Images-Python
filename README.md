@@ -51,14 +51,14 @@ cd to the Compare-Images-Python directory and run compareimages.py, after the sc
 
 ## For Windows Users:
 
-### Install Git on Windows:
+### 1. Install Git on Windows:
 To download the latest version of Git, click on the link:
 https://git-scm.com/download/win/
 
 After your download is complete, Run the .exe file in your system.
 Use Git From Git Bash Only
 
-### How to install Python on Windows?
+### 2. How to install Python on Windows?
 Python is available from its website, Python.org. Once there, hover your mouse over the Downloads menu, then over the Windows option, and then click the button to download the latest release.
 
 Once the package is downloaded, open it to start the installer.

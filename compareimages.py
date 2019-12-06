@@ -1,5 +1,6 @@
 import math, operator
 from pathlib import Path
+# Import the PIL module
 from PIL import Image
 # importing csv module
 import csv
@@ -10,11 +11,26 @@ inputfilename = Path("Images_To_Be_Compared.csv")
 # Compared images name of csv file
 outputfilename = Path("Compared_Images_Result.csv")
 
+def loadImage(image):
+	try:
+		# Load an image from the hard drive
+		original = Image.open(image)
+		print(original.format, original.size, original.mode)
+	except:
+		print("Unable to load image")
+
 def compare(image1, image2):
-	h1 = Image.open("image1").histogram()
-	h2 = Image.open("image2").histogram()
+	h1 = Image.open(image1).histogram()
+	h2 = Image.open(image2).histogram()
 
 	return math.sqrt(reduce(operator.add, map(lambda a, b: (a - b) ** 2, h1, h2)) / len(h1))
+	
+def checkNumberOfColumns(row):
+	try:
+		columns = len(row)
+		print(columns)
+	except:
+		print("There must be exactly 2 number of columns with column name as image1 and image2")
 
 # Creating an empty list of Dictionary
 dict_list = []
@@ -25,10 +41,9 @@ try:
 		reader = csv.DictReader(csvfile)
 		for row in reader:
 			# get total number of columns
-			columns = len(row)
-			#print(columns)
-			if columns != 2:
-				print("There must be exactly 2 number of columns with column name as image1 and image2")
+			checkNumberOfColumns(row)
+			loadImage(row['image1'])
+			loadImage(row['image2'])
 			row['similar'] = compare(row['image1'], row['image2'])
 			row['elapsed'] = 0
 			dict_list.append(row)

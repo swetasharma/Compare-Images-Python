@@ -73,4 +73,4 @@ Repeat step 3 given above for windows as well.
 
 Congratulations! Setup completed!
 
-Note: dockerfile part is pending
+##Note: dockerfile part is pending
